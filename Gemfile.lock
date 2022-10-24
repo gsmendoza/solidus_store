@@ -417,6 +417,8 @@ GEM
       railties (>= 6.0.0)
     stringio (3.0.2)
     strscan (3.0.4)
+    tailwindcss-rails (2.0.16-x86_64-linux)
+      railties (>= 6.0.0)
     terrapin (0.6.0)
       climate_control (>= 0.0.3, < 1.0)
     thor (1.2.1)
@@ -488,6 +490,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
+  tailwindcss-rails (~> 2.0)
   truncate_html
   turbo-rails
   tzinfo-data
