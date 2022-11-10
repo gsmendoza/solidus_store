@@ -72,3 +72,4 @@ group :test do
 end
 
 gem "solidus", "~> 3.2"
+gem "solidus_paypal_commerce_platform"
