@@ -70,3 +70,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "solidus", "~> 3.2", github: 'nebulab/solidus', branch: 'gsmendoza/sol-551-backport-extensiontest_app-smoke-test-to--ssf-21895a99'
