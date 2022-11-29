@@ -71,4 +71,30 @@ group :test do
   gem "webdrivers"
 end
 
-gem "solidus", "~> 3.2", github: 'nebulab/solidus', branch: 'gsmendoza/sol-547-fix-ensure-that-ssf-32-doesnt-add--with-test-ssf-branch'
+
+gem "solidus_core", git: "https://github.com/nebulab/solidus.git", ref: "gsmendoza/sol-547-fix-ensure-that-ssf-32-doesnt-add--with-test-ssf-branch"
+gem "solidus_backend", git: "https://github.com/nebulab/solidus.git", ref: "gsmendoza/sol-547-fix-ensure-that-ssf-32-doesnt-add--with-test-ssf-branch"
+gem "solidus_api", git: "https://github.com/nebulab/solidus.git", ref: "gsmendoza/sol-547-fix-ensure-that-ssf-32-doesnt-add--with-test-ssf-branch"
+gem "solidus_sample", git: "https://github.com/nebulab/solidus.git", ref: "gsmendoza/sol-547-fix-ensure-that-ssf-32-doesnt-add--with-test-ssf-branch"
+gem "canonical-rails"
+gem "solidus_support"
+gem "truncate_html"
+gem "view_component", "~> 2.46"
+
+group :development, :test do
+  gem "rspec-rails"
+  gem "apparition", "~> 0.6.0", github: "twalpole/apparition"
+  gem "rails-controller-testing", "~> 1.0.5"
+  gem "rspec-activemodel-mocks", "~> 1.1.0"
+  gem "capybara-screenshot", "~> 1.0"
+  gem "database_cleaner", "~> 1.7"
+  gem "factory_bot", ">= 4.8"
+  gem "factory_bot_rails"
+  gem "ffaker", "~> 2.13"
+  gem "rubocop", "~> 1.0"
+  gem "rubocop-performance", "~> 1.5"
+  gem "rubocop-rails", "~> 2.3"
+  gem "rubocop-rspec", "~> 2.0"
+end
+gem "solidus_auth_devise"
+gem "solidus_paypal_commerce_platform"
