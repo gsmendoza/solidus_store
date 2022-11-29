@@ -70,3 +70,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "solidus", "~> 3.2", github: 'nebulab/solidus', branch: 'gsmendoza/sol-547-fix-ensure-that-ssf-32-doesnt-add--with-test-ssf-branch'
