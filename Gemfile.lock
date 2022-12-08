@@ -1,4 +1,16 @@
 GIT
+  remote: https://github.com/solidusio/solidus_braintree.git
+  revision: 4e55e7536d4486a0b856df8866a3c75f73931edb
+  branch: gsmendoza/96-update-the-extension-namespace-to-solidus-braintree
+  specs:
+    solidus_braintree (1.2.0)
+      activemerchant (~> 1.48)
+      braintree (~> 3.4)
+      solidus_api (>= 2.4.0, < 4)
+      solidus_core (>= 2.4.0, < 4)
+      solidus_support (>= 0.8.1, < 1)
+
+GIT
   remote: https://github.com/twalpole/apparition.git
   revision: ca86be4d54af835d531dbcd2b86e7b2c77f85f34
   specs:
@@ -79,7 +91,7 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-    acts_as_list (1.0.4)
+    acts_as_list (1.1.0)
       activerecord (>= 4.2)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
@@ -92,6 +104,9 @@ GEM
     bindex (0.8.1)
     bootsnap (1.15.0)
       msgpack (~> 1.2)
+    braintree (3.4.0)
+      builder (>= 3.2.4)
+      libxml-ruby (>= 3.2.0)
     builder (3.2.4)
     cancancan (3.4.0)
     canonical-rails (0.2.14)
@@ -111,7 +126,7 @@ GEM
     carmen (1.1.3)
       activesupport (>= 3.0.0)
     climate_control (0.2.0)
-    concurrent-ruby (1.1.10)
+    concurrent-ruby (1.2.0)
     crass (1.0.6)
     database_cleaner (1.99.0)
     date (3.3.3)
@@ -148,7 +163,7 @@ GEM
       railties (>= 3.2, < 8.0)
     friendly_id (5.5.0)
       activerecord (>= 4.0.0)
-    globalid (1.0.0)
+    globalid (1.1.0)
       activesupport (>= 5.0)
     handlebars_assets (0.23.9)
       execjs (~> 2.0)
@@ -193,10 +208,11 @@ GEM
       terrapin (~> 0.6.0)
     launchy (2.5.2)
       addressable (~> 2.8)
+    libxml-ruby (4.0.0)
     loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    mail (2.8.0)
+    mail (2.8.0.1)
       mini_mime (>= 0.1.1)
       net-imap
       net-pop
@@ -225,7 +241,7 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.13.10-x86_64-linux)
+    nokogiri (1.14.1-x86_64-linux)
       racc (~> 1.4)
     omnes (0.2.2)
     orm_adapter (0.5.0)
@@ -239,7 +255,7 @@ GEM
     puma (5.6.5)
       nio4r (~> 2.0)
     racc (1.6.2)
-    rack (2.2.5)
+    rack (2.2.6.2)
     rack-test (2.0.2)
       rack (>= 1.3)
     rails (7.0.4)
@@ -263,7 +279,7 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.4.4)
+    rails-html-sanitizer (1.5.0)
       loofah (~> 2.19, >= 2.19.1)
     railties (7.0.4)
       actionpack (= 7.0.4)
@@ -422,7 +438,7 @@ GEM
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
-    tzinfo (2.0.5)
+    tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.4.2)
     view_component (2.82.0)
@@ -477,6 +493,7 @@ DEPENDENCIES
   solidus_api (~> 3.2)
   solidus_auth_devise
   solidus_backend (~> 3.2)
+  solidus_braintree!
   solidus_core (~> 3.2)
   solidus_sample (~> 3.2)
   solidus_support

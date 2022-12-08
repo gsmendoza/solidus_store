@@ -101,3 +101,6 @@ end
 #        or replace it with a simple `gem 'solidus_auth_devise'` otherwise.
 gem 'solidus_auth_devise' unless File.read(__FILE__).lines[__LINE__..-1].grep(/solidus_auth_devise/).any?
 
+gem 'solidus_braintree',
+  github: 'solidusio/solidus_braintree',
+  branch: 'gsmendoza/96-update-the-extension-namespace-to-solidus-braintree'
