@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/solidusio/solidus_paypal_braintree.git
-  revision: 98c887da1e66ad23c0929cd60c342cff52fe9033
-  branch: master
+  revision: 29150a95b355533b23b9e66020fb085bdeca4d05
+  branch: gsmendoza/336-update-the-extension-namespace-to-solidus-braintree
   specs:
-    solidus_paypal_braintree (1.2.0)
+    solidus_braintree (1.2.0)
       activemerchant (~> 1.48)
       braintree (~> 3.4)
       solidus_api (>= 2.4.0, < 4)
@@ -416,8 +416,8 @@ DEPENDENCIES
   selenium-webdriver
   solidus (~> 3.2)
   solidus_auth_devise
+  solidus_braintree!
   solidus_frontend (~> 3.2)
-  solidus_paypal_braintree!
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
