@@ -1,3 +1,15 @@
+GIT
+  remote: https://github.com/solidusio/solidus_braintree.git
+  revision: 2ca4a8206cad720726e17438c9072fae12ba65a1
+  branch: gsmendoza/91-make-compatible-with-ssf
+  specs:
+    solidus_braintree (1.2.0)
+      activemerchant (~> 1.48)
+      braintree (~> 3.4)
+      solidus_api (>= 2.4.0, < 4)
+      solidus_core (>= 2.4.0, < 4)
+      solidus_support (>= 0.8.1, < 1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -84,6 +96,9 @@ GEM
     bindex (0.8.1)
     bootsnap (1.15.0)
       msgpack (~> 1.2)
+    braintree (3.4.0)
+      builder (>= 3.2.4)
+      libxml-ruby (>= 3.2.0)
     builder (3.2.4)
     cancancan (3.4.0)
     canonical-rails (0.2.14)
@@ -185,6 +200,7 @@ GEM
       terrapin (~> 0.6.0)
     launchy (2.5.2)
       addressable (~> 2.8)
+    libxml-ruby (4.0.0)
     loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -471,6 +487,7 @@ DEPENDENCIES
   solidus_api (~> 3.2)
   solidus_auth_devise (~> 2.5)
   solidus_backend (~> 3.2)
+  solidus_braintree!
   solidus_core (~> 3.2)
   solidus_sample (~> 3.2)
   solidus_support
