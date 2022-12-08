@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
 SolidusBraintree.configure do |config|
-  # TODO: Remember to change this with the actual preferences you have implemented!
-  # config.sample_preference = 'sample_value'
+  config.table_name_prefix = 'solidus_paypal_braintree_'
 end
