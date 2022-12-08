@@ -87,7 +87,7 @@ Spree.user_class = "Spree::LegacyUser"
 
 Rails.application.config.to_prepare do
   Spree::Config.static_model_preferences.add(
-    SolidusPaypalBraintree::Gateway,
+    SolidusBraintree::Gateway,
     'braintree_credentials', {
       environment: Rails.env.production? ? 'production' : 'sandbox',
       merchant_id: ENV['BRAINTREE_MERCHANT_ID'],
