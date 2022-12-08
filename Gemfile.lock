@@ -1,4 +1,17 @@
 GIT
+  remote: https://github.com/solidusio/solidus_paypal_commerce_platform.git
+  revision: 66f216f0264fd90ae37f35287384999df4aef33d
+  branch: gsmendoza/172-missing-checkout-page
+  specs:
+    solidus_paypal_commerce_platform (1.0.0.beta1)
+      deface (~> 1.5)
+      paypalhttp
+      solidus_api
+      solidus_core (~> 3.0)
+      solidus_support (>= 0.8.0)
+      solidus_webhooks (~> 0.2)
+
+GIT
   remote: https://github.com/twalpole/apparition.git
   revision: ca86be4d54af835d531dbcd2b86e7b2c77f85f34
   specs:
@@ -218,12 +231,12 @@ GEM
       net-protocol
     net-pop (0.1.2)
       net-protocol
-    net-protocol (0.2.0)
+    net-protocol (0.2.1)
       timeout
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.13.9-x86_64-linux)
+    nokogiri (1.13.10-x86_64-linux)
       racc (~> 1.4)
     omnes (0.2.2)
     orm_adapter (0.5.0)
@@ -390,13 +403,6 @@ GEM
       ransack (~> 2.0)
       sprockets-rails
       state_machines-activerecord (~> 0.6)
-    solidus_paypal_commerce_platform (0.6.0)
-      deface (~> 1.5)
-      paypalhttp
-      solidus_api
-      solidus_core (~> 3.0)
-      solidus_support (>= 0.8.0)
-      solidus_webhooks (~> 0.2)
     solidus_sample (3.2.4)
       solidus_core (= 3.2.4)
     solidus_support (0.9.1)
@@ -420,7 +426,7 @@ GEM
       state_machines-activemodel (>= 0.8.0)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
-    stringio (3.0.2)
+    stringio (3.0.3)
     terrapin (0.6.0)
       climate_control (>= 0.0.3, < 1.0)
     thor (1.2.1)
@@ -487,7 +493,7 @@ DEPENDENCIES
   solidus_auth_devise
   solidus_backend (~> 3.2.4)
   solidus_core (~> 3.2.4)
-  solidus_paypal_commerce_platform
+  solidus_paypal_commerce_platform (~> 1.0.0.beta1)!
   solidus_sample (~> 3.2.4)
   solidus_support
   sprockets-rails

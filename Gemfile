@@ -102,4 +102,6 @@ end
 gem 'solidus_auth_devise' unless File.read(__FILE__).lines[__LINE__..-1].grep(/solidus_auth_devise/).any?
 
 gem "solidus_auth_devise"
-gem "solidus_paypal_commerce_platform"
+
+gem "solidus_paypal_commerce_platform", '~> 1.0.0.beta1',
+  github: 'solidusio/solidus_paypal_commerce_platform', branch: 'gsmendoza/172-missing-checkout-page'
