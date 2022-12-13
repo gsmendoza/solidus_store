@@ -392,7 +392,7 @@ GEM
       ransack (~> 2.0)
       sprockets-rails
       state_machines-activerecord (~> 0.6)
-    solidus_paypal_commerce_platform (0.6.0)
+    solidus_paypal_commerce_platform (1.0.0.beta2)
       deface (~> 1.5)
       paypalhttp
       solidus_api
@@ -489,7 +489,7 @@ DEPENDENCIES
   solidus_auth_devise
   solidus_backend (~> 3.2)
   solidus_core (~> 3.2)
-  solidus_paypal_commerce_platform
+  solidus_paypal_commerce_platform (~> 1.0.0.beta2)
   solidus_sample (~> 3.2)
   solidus_support
   sprockets-rails
