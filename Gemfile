@@ -75,4 +75,7 @@ gem "solidus", "~> 3.3"
 
 gem "solidus_auth_devise", "~> 2.5"
 
-gem 'solidus_paypal_braintree', github: 'solidusio/solidus_paypal_braintree', branch: :master
+gem 'solidus_braintree',
+  github: 'solidusio/solidus_braintree',
+  branch: 'gsmendoza/104-install-frontend-code',
+  require: 'solidus_paypal_braintree'

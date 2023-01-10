@@ -1,9 +1,9 @@
 GIT
-  remote: https://github.com/solidusio/solidus_paypal_braintree.git
-  revision: 98c887da1e66ad23c0929cd60c342cff52fe9033
-  branch: master
+  remote: https://github.com/solidusio/solidus_braintree.git
+  revision: 9efff63ac42088e51a61cf75e2f8fc506f67b87d
+  branch: gsmendoza/104-install-frontend-code
   specs:
-    solidus_paypal_braintree (1.2.0)
+    solidus_braintree (1.2.0)
       activemerchant (~> 1.48)
       braintree (~> 3.4)
       solidus_api (>= 2.4.0, < 4)
@@ -416,7 +416,7 @@ DEPENDENCIES
   selenium-webdriver
   solidus (~> 3.3)
   solidus_auth_devise (~> 2.5)
-  solidus_paypal_braintree!
+  solidus_braintree!
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
