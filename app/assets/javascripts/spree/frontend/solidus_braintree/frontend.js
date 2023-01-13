@@ -5,6 +5,7 @@
 // the compiled file.
 //
 //= require solidus_braintree/constants
+//= require solidus_braintree/ajax
 //= require solidus_braintree/promise
 //= require solidus_braintree/client
 //= require solidus_braintree/hosted_form
