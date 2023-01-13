@@ -6,7 +6,7 @@ SolidusBraintree.ajax = function(url, options) {
   options = options || {};
   options = $.extend(options, {
     headers: {
-      'Authorization': 'Bearer ' + Spree.api_key
+      'Authorization': 'Bearer '
     }
   });
   return $.ajax(url, options);
