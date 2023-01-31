@@ -1,9 +1,9 @@
 GIT
-  remote: https://github.com/solidusio/solidus_paypal_braintree.git
-  revision: 98c887da1e66ad23c0929cd60c342cff52fe9033
-  branch: master
+  remote: https://github.com/solidusio/solidus_braintree.git
+  revision: 4e55e7536d4486a0b856df8866a3c75f73931edb
+  branch: gsmendoza/96-update-the-extension-namespace-to-solidus-braintree
   specs:
-    solidus_paypal_braintree (1.2.0)
+    solidus_braintree (1.2.0)
       activemerchant (~> 1.48)
       braintree (~> 3.4)
       solidus_api (>= 2.4.0, < 4)
@@ -83,7 +83,7 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-    acts_as_list (1.0.4)
+    acts_as_list (1.1.0)
       activerecord (>= 4.2)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
@@ -114,7 +114,7 @@ GEM
     carmen (1.1.3)
       activesupport (>= 3.0.0)
     climate_control (0.2.0)
-    concurrent-ruby (1.1.10)
+    concurrent-ruby (1.2.0)
     crass (1.0.6)
     date (3.3.3)
     debug (1.7.1)
@@ -143,7 +143,7 @@ GEM
       railties (>= 3.2, < 8.0)
     friendly_id (5.5.0)
       activerecord (>= 4.0.0)
-    globalid (1.0.0)
+    globalid (1.1.0)
       activesupport (>= 5.0)
     handlebars_assets (0.23.9)
       execjs (~> 2.0)
@@ -189,7 +189,7 @@ GEM
     loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    mail (2.8.0)
+    mail (2.8.0.1)
       mini_mime (>= 0.1.1)
       net-imap
       net-pop
@@ -218,7 +218,7 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.13.10-x86_64-linux)
+    nokogiri (1.14.1-x86_64-linux)
       racc (~> 1.4)
     omnes (0.2.2)
     orm_adapter (0.5.0)
@@ -229,7 +229,7 @@ GEM
     puma (5.6.5)
       nio4r (~> 2.0)
     racc (1.6.2)
-    rack (2.2.5)
+    rack (2.2.6.2)
     rack-test (2.0.2)
       rack (>= 1.3)
     rails (7.0.4)
@@ -249,7 +249,7 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.4.4)
+    rails-html-sanitizer (1.5.0)
       loofah (~> 2.19, >= 2.19.1)
     railties (7.0.4)
       actionpack (= 7.0.4)
@@ -381,7 +381,7 @@ GEM
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
-    tzinfo (2.0.5)
+    tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     warden (1.2.9)
       rack (>= 2.0.9)
@@ -416,8 +416,8 @@ DEPENDENCIES
   selenium-webdriver
   solidus (~> 3.2)
   solidus_auth_devise
+  solidus_braintree!
   solidus_frontend (~> 3.2)
-  solidus_paypal_braintree!
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
