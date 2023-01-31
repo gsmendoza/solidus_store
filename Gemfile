@@ -78,4 +78,5 @@ gem "solidus_auth_devise"
 
 gem 'solidus_braintree',
   github: 'solidusio/solidus_braintree',
-  branch: 'gsmendoza/96-update-the-extension-namespace-to-solidus-braintree'
+  branch: 'gsmendoza/96-update-the-extension-namespace-to-solidus-braintree',
+  require: 'solidus_paypal_braintree'
