@@ -95,6 +95,7 @@ group :development, :test do
   gem "rubocop-performance", "~> 1.5"
   gem "rubocop-rails", "~> 2.3"
   gem "rubocop-rspec", "~> 2.0"
+  gem 'webmock'
 end
 
 # FIXME: Please remove this line if `solidus_auth_devise` appears anywhere else in the gemfile
