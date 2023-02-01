@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'spree/testing_support/order_walkthrough'
 
-shared_context "with frontend checkout setup" do
+RSpec.shared_context "with frontend checkout setup" do
   let(:braintree) { new_gateway(active: true) }
   let!(:gateway) { create :payment_method }
   let(:three_d_secure_enabled) { false }
