@@ -52,7 +52,7 @@ shared_context "with frontend checkout setup" do
   end
 end
 
-describe 'entering credit card details', type: :feature, js: true do
+RSpec.describe 'entering credit card details', type: :feature, js: true do
   context 'when page loads' do
     include_context "with frontend checkout setup"
 
