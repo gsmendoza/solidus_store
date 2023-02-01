@@ -1,0 +1,1 @@
+require 'solidus_starter_frontend_helper'
