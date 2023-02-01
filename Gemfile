@@ -99,6 +99,7 @@ group :development, :test do
   gem "rubocop-performance", "~> 1.5"
   gem "rubocop-rails", "~> 2.3"
   gem "rubocop-rspec", "~> 2.0"
+  gem 'webmock'
 end
 
 gem 'solidus_braintree',
