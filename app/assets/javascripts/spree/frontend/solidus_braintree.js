@@ -1,2 +1,2 @@
 //= require jquery3
-//= require solidus_braintree/frontend
+//= require spree/frontend/solidus_braintree
