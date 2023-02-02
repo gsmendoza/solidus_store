@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'solidus_braintree_helper'
 require 'spree/testing_support/order_walkthrough'
 
 RSpec.shared_context "with frontend checkout setup" do

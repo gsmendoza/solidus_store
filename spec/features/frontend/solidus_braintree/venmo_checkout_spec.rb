@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
+require 'solidus_braintree_helper'
 require 'spree/testing_support/order_walkthrough'
 
 RSpec.describe "Checkout", type: :feature, js: true do
