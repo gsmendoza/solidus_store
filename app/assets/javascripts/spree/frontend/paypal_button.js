@@ -8,7 +8,7 @@ $(document).ready(function() {
       $.getScript("https://js.braintreegateway.com/3.84.0/js/paypal-checkout.min.js"),
       $.getScript("https://js.braintreegateway.com/3.84.0/js/data-collector.min.js")
     ).done(function() {
-      $("#content").append('<div id="paypal-button"/>');
+      $("main").append('<div id="paypal-button"/>');
       $('<script/>').attr({
         'data-version-4' : "true"
       }).
@@ -27,7 +27,7 @@ $(document).ready(function() {
         );
         return button.initialize();
       }).
-      insertAfter("#content").
+      insertAfter("main").
       attr('src', 'https://www.paypalobjects.com/api/checkout.js');
     });
   }
