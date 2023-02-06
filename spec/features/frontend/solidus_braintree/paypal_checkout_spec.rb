@@ -19,7 +19,11 @@ RSpec.describe "Checkout", type: :feature, js: true do
   let!(:payment_method) { create_gateway }
   # let!(:zone) { create(:zone) }
 
+  let(:view_fixtures_path) { "spec/fixtures/views" }
+
   before do
+    ApplicationController.prepend_view_path view_fixtures_path
+
     create(:store, payment_methods: [payment_method]).tap do |s|
       s.braintree_configuration.update!(braintree_preferences)
     end
@@ -27,6 +31,17 @@ RSpec.describe "Checkout", type: :feature, js: true do
     create(:shipping_method)
     create(:stock_location)
     create(:zone)
+  end
+
+  after do
+    view_paths = ApplicationController.view_paths.to_a
+    prepended_view_path = view_paths.shift
+
+    if prepended_view_path.to_path !~ /#{view_fixtures_path}$/
+      raise "Prepended view path '#{prepended_view_path}' should be #{view_fixtures_path}"
+    end
+
+    ApplicationController.view_paths = view_paths
   end
 
   context "when going through express checkout using paypal cart button" do
