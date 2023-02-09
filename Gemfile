@@ -48,7 +48,6 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
-gem 'solidus', github: 'solidusio/solidus'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -71,4 +70,33 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+end
+
+gem "solidus_auth_devise", "~> 2.5"
+
+gem "solidus_core", git: "https://github.com/solidusio/solidus.git"
+gem "solidus_backend", git: "https://github.com/solidusio/solidus.git"
+gem "solidus_api", git: "https://github.com/solidusio/solidus.git"
+gem "solidus_sample", git: "https://github.com/solidusio/solidus.git"
+gem "canonical-rails"
+gem "solidus_support"
+gem "truncate_html"
+gem "view_component", "~> 2.46"
+
+group :test do
+  gem "capybara-screenshot", "~> 1.0"
+  gem "database_cleaner", "~> 1.7"
+end
+
+group :development, :test do
+  gem "rspec-rails"
+  gem "rails-controller-testing", "~> 1.0.5"
+  gem "rspec-activemodel-mocks", "~> 1.1.0"
+  gem "factory_bot", ">= 4.8"
+  gem "factory_bot_rails"
+  gem "ffaker", "~> 2.13"
+  gem "rubocop", "~> 1.0"
+  gem "rubocop-performance", "~> 1.5"
+  gem "rubocop-rails", "~> 2.3"
+  gem "rubocop-rspec", "~> 2.0"
 end
