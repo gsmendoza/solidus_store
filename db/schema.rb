@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_09_055081) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_09_063401) do
   create_table "action_mailbox_inbound_emails", force: :cascade do |t|
     t.integer "status", default: 0, null: false
     t.string "message_id", null: false
@@ -69,6 +69,18 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_09_055081) do
     t.index ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
     t.index ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id"
     t.index ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
+  end
+
+  create_table "paypal_commerce_platform_sources", force: :cascade do |t|
+    t.integer "payment_method_id"
+    t.string "authorization_id"
+    t.string "capture_id"
+    t.string "paypal_email"
+    t.string "paypal_order_id"
+    t.string "refund_id"
+    t.datetime "created_at", precision: nil, null: false
+    t.datetime "updated_at", precision: nil, null: false
+    t.integer "paypal_funding_source"
   end
 
   create_table "spree_addresses", force: :cascade do |t|
