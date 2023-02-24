@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount SolidusBraintree::Engine, at: '/solidus_braintree'
   root to: 'home#index'
 
   devise_for(:user, {
@@ -64,7 +65,6 @@ Rails.application.routes.draw do
   get '/unauthorized', to: 'home#unauthorized', as: :unauthorized
   get '/cart_link', to: 'store#cart_link', as: :cart_link
 
-mount SolidusPaypalBraintree::Engine, at: '/solidus_paypal_braintree'
   # This line mounts Solidus's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to Spree::ProductsController.
   # If you would like to change where this engine is mounted, simply change the :at option to something different.

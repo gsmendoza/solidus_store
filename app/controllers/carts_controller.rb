@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class CartsController < StoreController
+  helper SolidusBraintree::BraintreeCheckoutHelper
+
   helper 'spree/products', 'orders'
 
   respond_to :html
