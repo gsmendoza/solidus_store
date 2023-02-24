@@ -71,10 +71,10 @@ group :test do
   gem "webdrivers"
 end
 
-gem 'solidus_core', '~> 3.3'
-gem 'solidus_backend', '~> 3.3'
-gem 'solidus_api', '~> 3.3'
-gem 'solidus_sample', '~> 3.3'
+gem 'solidus_core', '~> 3.4.0.dev', github: 'solidusio/solidus', branch: 'master'
+gem 'solidus_backend', '~> 3.4.0.dev', github: 'solidusio/solidus', branch: 'master'
+gem 'solidus_api', '~> 3.4.0.dev', github: 'solidusio/solidus', branch: 'master'
+gem 'solidus_sample', '~> 3.4.0.dev', github: 'solidusio/solidus', branch: 'master'
 
 gem "solidus_auth_devise", "~> 2.5"
 
