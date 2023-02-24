@@ -72,3 +72,5 @@ group :test do
 end
 
 gem "solidus", "~> 3.3"
+
+gem "solidus_auth_devise", "~> 2.5"
