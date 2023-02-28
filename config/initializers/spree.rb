@@ -5,6 +5,8 @@
 Spree.load_defaults '3.3.1'
 
 Spree.config do |config|
+  config.address_requires_phone = false
+
   # Core:
   # Default currency for new sites
   config.currency = "USD"
