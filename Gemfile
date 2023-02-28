@@ -71,4 +71,10 @@ group :test do
   gem "webdrivers"
 end
 
-gem "solidus", "~> 3.3"
+
+gem "solidus_auth_devise", "~> 2.5"
+
+gem "solidus_core", "~> 3.3"
+gem "solidus_backend", "~> 3.3"
+gem "solidus_api", "~> 3.3"
+gem "solidus_sample", "~> 3.3"
