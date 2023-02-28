@@ -102,3 +102,8 @@ group :development, :test do
 end
 
 gem 'solidus_braintree', github: 'solidusio/solidus_braintree', branch: 'master'
+
+group :test do
+  gem "vcr"
+  gem "webmock"
+end

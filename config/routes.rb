@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount SolidusBraintree::Engine, at: '/solidus_braintree'
   root to: 'home#index'
 
   devise_for(:user, {
